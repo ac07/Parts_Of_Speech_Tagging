@@ -1,4 +1,6 @@
-#Implemented Parts of Speech Tagging using the following approaches:
+#Parts of Speech Tagging
+
+Implemented using the following approaches:
 
   1. Naive Bayes Classifier
   2. Gibbs Sampling (MCMC)
