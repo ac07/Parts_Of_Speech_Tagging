@@ -1,16 +1,7 @@
 ###################################
-# CS B551 Fall 2015, Assignment #5
-#
-# Your names and user ids:
-# Angad Chandorkar: anajchan
-# Roshan Kathawate: rkathawa
-# (Based on skeleton code by D. Crandall)
-#
-#
+# CS B551 Fall 2015, Assignment (Based on skeleton code by D. Crandall)
 ####
-# Put your report here!!
-# a) HOW THE CODE WORkS:
-#    The code can be broadly divided into the stipulated tasks: 
+# OVERVIEW: The code can be broadly divided into the stipulated tasks: 
 #    0. The initial probabilites are computed using the training data. Both the log and normal values of prior, emission and transition
 #       probabilites are stored during this stage. Log values are used for computation in the Naive and Viterbi Algorithms.
 #    1. Naive Bayes: The naive bayes has been implemented using the probabilities computed in the previous step. Some optimization 
@@ -30,7 +21,7 @@
 #       Algorithm. We were not able to sufficiently improve upon the accuracy for this algorithm despite a few tweaks and are therefore 
 #       including the same as the Best Algorithm.  
 #
-# b) RESULTS OF EVALUATION ON BC.TEST
+# RESULTS OF EVALUATION ON BC.TEST
 #    ALGORITHM                            WORDS CORRECT (%)                  CORRECT SENTENCES (%)         
 #    1. Naive                                 92.82                                 42.25
 #    2. Sampling MCMC                         89.25                                  7.55
@@ -39,7 +30,7 @@
 #    5. Best(Viterbi)                         93.40                                 45.70
 #
 #
-# c) PROBLEMS FACED, ASSUMPTIONS, DESIGN DECISIONS
+# PROBLEMS FACED, ASSUMPTIONS, DESIGN DECISIONS
 #    Implemnting Smoothing was a problem. We tried to use Add One smoothing but weren't able to decide on what the vocabulary
 #    should be for different conditional probability computations. Therefore, we have made the assumption that if the probability 
 #    of an event is 0, we substitute this with 0.000000001. We checked for any drops in accuracy before arriving at this value. 
